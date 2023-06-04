@@ -75,7 +75,7 @@ def start_screen(message):
             if event.type == pygame.QUIT:
                 pygame.quit()
                 exit()
-            if event.type == pygame.KEYUP:  # Any key press will break the loop
+            if event.type == pygame.KEYDOWN:  # Key press will break the loop
                 return
 
         screen.fill((94, 129, 162))  # Pretty blue color
@@ -182,6 +182,7 @@ while True:
 
     # When the player loses (game_active becomes False), call the start_screen() function with the score
     if not game_active:
+        pygame.event.clear()  # clear the event queue
         start_screen(score)
 
         # Reset the game data
