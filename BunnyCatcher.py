@@ -15,22 +15,22 @@ level = 1
 bunny_speed = 3
 health = 3
 
-bg_music_path = os.path.join('Small-Town.mp3')
+bg_music_path = os.path.join('Bunny-Catching-Game-main', 'Small-Town.mp3')
 bg_music = pygame.mixer.Sound(bg_music_path)
 bg_music.set_volume(0.05)
 bg_music.play(loops=-1)
 
 # Background image data
-background_path = os.path.join('background.jpg')
+background_path = os.path.join('Bunny-Catching-Game-main', 'background.jpg')
 background_image = pygame.image.load(background_path)
 background_image = pygame.transform.scale(background_image, (800, 400))
 
 # Hearts image data
-full_heart_path = os.path.join('full_heart.png')
+full_heart_path = os.path.join('Bunny-Catching-Game-main', 'full_heart.png')
 full_heart = pygame.image.load(full_heart_path)
 full_heart = pygame.transform.scale(full_heart, (52, 48))
 
-empty_heart_path = os.path.join('empty_heart.png')
+empty_heart_path = os.path.join('Bunny-Catching-Game-main', 'empty_heart.png')
 empty_heart = pygame.image.load(empty_heart_path)
 empty_heart = pygame.transform.scale(empty_heart, (52, 48))
 
@@ -38,13 +38,13 @@ empty_heart = pygame.transform.scale(empty_heart, (52, 48))
 my_font = pygame.font.Font(None, 36)
 
 # Basket sprite data
-basket_path = os.path.join('basket.png')
+basket_path = os.path.join('Bunny-Catching-Game-main', 'basket.png')
 basket_image = pygame.image.load(basket_path)
 basket_image = pygame.transform.scale(basket_image, (75, 75))
 basket_rect = basket_image.get_rect(center=(400, 310))
 
 # Bunny sprite data
-bunny_path = os.path.join('bunny.png')
+bunny_path = os.path.join('Bunny-Catching-Game-main', 'bunny.png')
 bunny_image = pygame.image.load(bunny_path)
 bunny_image = pygame.transform.scale(bunny_image, (84, 47))
 bunny_rect = bunny_image.get_rect()
