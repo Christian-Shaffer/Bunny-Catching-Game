@@ -1,4 +1,4 @@
-This game was made using the Pygame module. 
+This game was made using the Pygame module! 
 
 Place the folder in your main working directory. 
 
